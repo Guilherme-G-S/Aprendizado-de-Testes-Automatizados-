@@ -28,5 +28,24 @@ Quando('eu entro na janela e verifico a mensagem') do
 end
 
 Quando('eu entro no alert e verifico faco a acao') do
-
+  visit '/mudancadefoco/alert'
+  click_on('Clique para JS Alert')
+  sleep(1)
+  #executa o bloco aceitando um alerta, sempre que for mencionar algo na pagina, usa-se "page"
+  page.accept_alert
+  sleep(2)
+  find('button[onclick="jsConfirm()"]').click
+  sleep(1)
+  #executa o bloco aceitando uma confirmação como: Ok, Sim, Feito... É parecido com o accept_alert
+  page.accept_confirm
+  #executa o bloqueio, dispensando uma confirmação
+  page.dismiss_confirm
+  sleep(2)
+  find('button[onclick="jsPrompt()"]').click
+  sleep(1)
+  #executa o bloco aceitando um prompt e respondendo opcionalmente
+  page.accept_prompt(with: 'Guilherme')
+  #executa o bloco, dispensando o prompt que abre
+  page.dismiss_prompt
+  sleep(2)
 end 

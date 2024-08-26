@@ -1,0 +1,50 @@
+[
+  {
+    "id": "criando-e-editando-um-usuario-com-end-to-end",
+    "uri": "features/specs/end_to_end.feature",
+    "keyword": "Funcionalidade",
+    "name": "Criando e editando um usuario com end to end",
+    "description": "",
+    "line": 3,
+    "elements": [
+      {
+        "id": "criando-e-editando-um-usuario-com-end-to-end;criar-usuário-com-sucesso",
+        "keyword": "Cenario",
+        "name": "Criar usuário com sucesso",
+        "description": "",
+        "line": 6,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Quando ",
+            "name": "eu cadastro o usuario",
+            "line": 7,
+            "match": {
+              "location": "features/specs/end_to_end.feature:7"
+            },
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "keyword": "Entao ",
+            "name": "verifico se o usuario foi cadastrado",
+            "line": 8,
+            "match": {
+              "location": "features/specs/end_to_end.feature:8"
+            },
+            "result": {
+              "status": "undefined"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@end_to_end",
+            "line": 5
+          }
+        ]
+      }
+    ]
+  }
+]

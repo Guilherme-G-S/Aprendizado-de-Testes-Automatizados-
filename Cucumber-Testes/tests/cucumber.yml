@@ -1,0 +1,11 @@
+---
+
+default: -p pretty -p html
+
+pretty: --format pretty
+progress: --format progress
+homolog: --require features/support/homolog.yml --format json --out result.json
+producao: AMBIENTE= producao
+chrome: BROWSER=chrome
+firefox: BROWSER=firefox
+html: --format html --out=reports/relatorio.html

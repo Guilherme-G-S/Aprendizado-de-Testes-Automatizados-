@@ -15,3 +15,7 @@ end
 After '@teste_tag' do
   puts 'rodei depois apenas no cenario com a tag'
 end
+
+Before do 
+  Capybara.page.driver.browser.manage.window.maximize
+end
