@@ -1,7 +1,5 @@
 source 'http://rubygems.org'
 
-
-group :development, :test do
   gem 'cucumber'
   gem 'rspec'
   gem 'rspec-rails'
@@ -9,6 +7,5 @@ group :development, :test do
   gem 'capybara'
   gem 'selenium-webdriver'
   gem 'webdrivers' # Para gerenciar automaticamente o driver do Chrome
-  gem 'site_prism' # Se você estiver usando SitePrism
+  gem 'site_prism', '2.13' # Se você estiver usando SitePrism
   gem 'rails'
-end
